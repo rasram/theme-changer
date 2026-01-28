@@ -1,0 +1,17 @@
+{
+  "name": "interactive-website",
+  "version": "1.0.0",
+  "description": "An interactive website with custom build command",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:custom": "echo '🚀 Running custom build...' && vite build --outDir dist-custom --minify terser && echo '✅ Custom build complete!'",
+    "preview": "vite preview",
+    "preview:custom": "vite preview --outDir dist-custom"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "terser": "^5.24.0"
+  }
+}

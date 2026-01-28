@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎨 Interactive Playground</h1>
+      <p class="subtitle">Click, drag, and explore!</p>
+    </header>
+
+    <main>
+      <!-- Color Picker Section -->
+      <section class="card">
+        <h2>🎭 Theme Changer</h2>
+        <div class="color-buttons">
+          <button class="color-btn" data-color="#667eea" style="background: #667eea"></button>
+          <button class="color-btn" data-color="#f093fb" style="background: #f093fb"></button>
+          <button class="color-btn" data-color="#4facfe" style="background: #4facfe"></button>
+          <button class="color-btn" data-color="#43e97b" style="background: #43e97b"></button>
+          <button class="color-btn" data-color="#fa709a" style="background: #fa709a"></button>
+          <button class="color-btn" data-color="#fee140" style="background: #fee140"></button>
+        </div>
+      </section>
+
+      <!-- Counter Section -->
+      <section class="card">
+        <h2>🔢 Counter</h2>
+        <div class="counter-container">
+          <button id="decrement" class="counter-btn">−</button>
+          <span id="counter-value">0</span>
+          <button id="increment" class="counter-btn">+</button>
+        </div>
+        <button id="reset" class="reset-btn">Reset</button>
+      </section>
+
+      <!-- Todo List Section -->
+      <section class="card">
+        <h2>📝 Quick Notes</h2>
+        <div class="todo-input">
+          <input type="text" id="todo-text" placeholder="Add a note..." />
+          <button id="add-todo">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+      </section>
+
+      <!-- Animation Section -->
+      <section class="card">
+        <h2>✨ Interactive Box</h2>
+        <div id="animation-box" class="animation-box">
+          <span>Hover & Click Me!</span>
+        </div>
+        <div class="animation-controls">
+          <button id="spin-btn">Spin</button>
+          <button id="pulse-btn">Pulse</button>
+          <button id="shake-btn">Shake</button>
+        </div>
+      </section>
+
+      <!-- Drawing Canvas -->
+      <section class="card">
+        <h2>🖌️ Mini Canvas</h2>
+        <canvas id="draw-canvas" width="300" height="200"></canvas>
+        <div class="canvas-controls">
+          <input type="color" id="brush-color" value="#667eea">
+          <input type="range" id="brush-size" min="1" max="20" value="5">
+          <button id="clear-canvas">Clear</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with ❤️ | Custom Build: <code>npm run build:custom</code></p>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
